@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Background and Font Size Change</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .hover-text {
+      font-size: 12px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      transition: all 3s ease;
+      display: inline-block;
+    }
+
+    .hover-text:hover {
+      font-size: 30px;
+      background-color: #ffeb3b;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 235, 59, 0.7);
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Mouse Hover Example</h2>
+    <div class="hover-text">Hover over this text!</div>
+  </div>
+</body>
+</html>

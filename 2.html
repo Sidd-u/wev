@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+         *{width: 100%;margin: 0px;}
+        #h,#r,#l,#m,#f{height: 100px;}
+        #h{background-color: aqua;}
+        #l{background-color: aquamarine;}
+        #m{background-color: blue;}
+        #r{background-color: blueviolet;}
+        #f{background-color: burlywood;}
+        #C{display: flex;}
+        @media(max-width:600px){
+            #C{flex-direction:column;}
+        }
+        @media(min-width:601px) and (max-width:992px){
+            #C{flex-wrap:wrap;}
+            #l{order:2; width:50%;       }
+            #m{order:1;}
+            #r{order:3; width:50%; }
+            }
+         @media (min-width: 601px) and (max-width: 900px) {
+      .container {
+        flex-direction: row;
+      }
+      .box {
+        background-color: lightyellow;
+        flex: 1 1 45%;
+      }
+    }
+    </style>
+    
+</head>
+
+<body>
+    <div id="">
+        <header id="h">Header</header>
+        <div id="C">
+           <div id="l">Left</div>
+           <div id="m">Middle</div>
+           <div id="r">Right</div>
+        </div>
+        <footer id="f">Footer</footer>
+    </div>
+</body>
+</html>

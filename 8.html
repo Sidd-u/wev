@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Input Value using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h2>Enter Your Name</h2>
+  <input type="text" id="name" placeholder="Type something...">
+  <button id="showValue">Show Value</button>
+
+  <script>
+    $(document).ready(function() {
+      $("#showValue").click(function() {
+        var inputValue = $("#name").val();  // get the text field value
+        alert("You entered: " + inputValue); // show it in alert box
+      });
+    });
+  </script>
+
+</body>
+</html>

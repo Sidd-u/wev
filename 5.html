@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Page - Bootstrap</title>
+
+  <!-- ✅ Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ✅ Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bol" href="#">MyCollege</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Hero Section -->
+  <div class="container text-center my-4">
+    <h2 class="text-primary fw-bold">Welcome to MyCollege</h2>
+    <p class="text-muted">A simple, responsive webpage built with Bootstrap 5</p>
+    <a href="#" class="btn btn-success mt-2">Learn More</a>
+  </div>
+
+  <!-- ✅ Card Section -->
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-12">
+        <div class="card shadow-sm">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Card image">
+          <div class="card-body text-center">
+            <h5 class="card-title">Student Login</h5>
+            <p class="card-text">Access your academic results securely.</p>
+            <a href="#" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="card shadow-sm">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Card image">
+          <div class="card-body text-center">
+            <h5 class="card-title">Fee Payment</h5>
+            <p class="card-text">Pay your tuition and exam fees online.</p>
+            <a href="#" class="btn btn-warning">Pay Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="card shadow-sm">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Card image">
+          <div class="card-body text-center">
+            <h5 class="card-title">Results</h5>
+            <p class="card-text">Check your academic results quickly.</p>
+            <a href="#" class="btn btn-danger">View Results</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 MyCollege. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

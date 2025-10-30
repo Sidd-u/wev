@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Append List Item using jQuery</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    ul {
+      list-style-type: circle;
+      display: inline-block;
+      text-align: left;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+<input type="text" id="username">
+  <h2>Append List Item using jQuery</h2>
+
+  <ul id="myList">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul><br>
+
+  <button id="addItem">Add New Item</button>
+
+  <script>
+    
+    var username=document.getElementById("username")
+    $(document).ready(function() {
+      $("#addItem").click(function() {
+        $("#myList").append("<li>"username"</li>");
+      });
+    });
+  </script>
+
+</body>
+</html>
